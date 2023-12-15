@@ -11,5 +11,5 @@ spec:
     - name: wget
       image: busybox
       command: ['wget']
-      args: ['{{ include "lab-basic-bot.fullname" . }}:{{ .Values.service.port }}/v1/teams']
+      args: ['{{ include "lab-basic-bot.fullname" . }}:{{ .Values.service.port }}/echo']
   restartPolicy: Never
